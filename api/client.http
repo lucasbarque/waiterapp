@@ -1,0 +1,30 @@
+# Variables
+@baseUrl = http://localhost:3001
+
+### Categories
+# @name categories
+GET {{baseUrl}}/categories
+
+
+### Create category
+# @name createCategory
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+  "icon": "🍕",
+  "name": "Pizza"
+}
+
+### List Products
+# @name listProducts
+GET {{baseUrl}}/products
+
+### Create Product
+# @name createProduct
+POST {{baseUrl}}/categories
+Content-Type: multipart/form-data
+Content-Disposition: form-data; name="Pizza quatro queijos"
+Content-Disposition: form-data; Description="Deliciosa pizza quatro queijos com bordas simples"
+Content-Disposition: form-data; price="40"
+Content-Disposition: form-data; category="40"
